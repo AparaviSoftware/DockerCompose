@@ -15,7 +15,7 @@ services:
       retries: 10
 
   platform:
-    image: aparavi/aparavi:2.20.2-25611
+    image: aparavi/aparavi:2.22.0-27472
     ports:
       - 9452
     environment:
@@ -42,7 +42,7 @@ services:
         condition: service_healthy
 
   appagent:
-    image: aparavi/aparavi:2.20.2-25611
+    image: aparavi/aparavi:2.22.0-27472
     environment:
       - APPTYPE=appagt
       - APARAVI_PLATFORM=platform
